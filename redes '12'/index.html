@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+  <!--==================== METADATOS ====================-->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="description" content="SocialMedia">
+      <meta name="keywords" content="HTML-CSS-JS">
+      <meta name="author" content="Rocio Cuello">
+      
+      <!--==================== CSS ====================-->
+      <link rel="stylesheet" href="assets/css/style.css">
+
+      <!--==================== TITULO ====================-->
+      <title> SocialMedia | Neumorphic Social Media Icons </title>
+
+      <!--==================== ICONO DE PESTAÑA ====================-->
+      <link rel="icon" sizes="64x64" href="assets/img/favicon.webp"> 
+
+     <!--==================== CDN ====================-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+ 
+  </head>
+  <body>
+    <div class="center">
+      <div class="icons first">
+        <li>
+          <a href="#"><span class="fab fa-facebook-f"></span></a>
+        </li>
+        <li>
+          <a href="#"><span class="fa-brands fa-x-twitter"></span></a>
+        </li>
+        <li>
+          <a href="#"><span class="fab fa-instagram"></span></a>
+        </li>
+        <li>
+          <a href="#"><span class="fab fa-linkedin-in"></span></a>
+        </li>
+        <li>
+          <a href="#"><span class="fab fa-github"></span></a>
+        </li>
+      </div>
+      <div class="icons second">
+        <li>
+          <a href="#"><span class="fab fa-facebook-f"></span></a>
+        </li>
+        <li>
+          <a href="#"><span class="fa-brands fa-x-twitter"></span></a>
+        </li>
+        <li>
+          <a href="#"><span class="fab fa-instagram"></span></a>
+        </li>
+        <li>
+          <a href="#"><span class="fab fa-linkedin-in"></span></a>
+        </li>
+        <li>
+          <a href="#"><span class="fab fa-github"></span></a>
+        </li>
+      </div>
+    </div>
+    <script>
+      $(".first li").click(function () {
+        $(this).toggleClass("shadow-1").siblings();
+        $(this).toggleClass("fill-color").siblings();
+      });
+      $(".second li").click(function () {
+        $(this).toggleClass("shadow-2").siblings();
+        $(this).toggleClass("fill-color").siblings();
+      });
+    </script>
+  </body>
+</html>

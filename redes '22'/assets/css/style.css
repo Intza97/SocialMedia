@@ -1,0 +1,51 @@
+body {
+  background: rgba(0, 0, 0, 0);
+}
+.social-container {
+  width: 400px;
+  height: 40vh auto;
+  text-align: center;
+}
+.social-icon {
+  padding: 0;
+  list-style: none;
+  margin: 1em;
+}
+.social-icon li {
+  display: inline-block;
+  margin: 0.15em;
+  position: relative;
+  font-size: 1.2em;
+}
+.social-icon i {
+  color: #fff;
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  transition: all 265ms ease-out;
+}
+.social-icon a {
+  display: inline-block;
+}
+.social-icon a::before {
+  transform: scale(1);
+  content: "";
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: block;
+  background: linear-gradient(45deg, #00b5f5, #002abf);
+  transition: all 265ms ease-in-out;
+}
+.social-icon a:hover::before {
+  transform: scale(0);
+  transition: all 265ms ease-in;
+}
+.social-icon a:hover i {
+  transform: scale(2.2);
+  color: #00b5f5;
+  background: -webkit-linear-gradient(45deg, #00b5f5, #002a8f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 265ms ease-in;
+}
